@@ -14,16 +14,12 @@ musicData("eminem")
 .catch((error)=> {console.log(error)});
 
 musicData("metallica")
-.then((response)=>{ response.json().then((data)=>{getAlbum(data, "metallica")})})
+.then((response)=>{ response.json().then((data)=> {getAlbum(data, "metallica")})})
 .catch((error)=>{console.log(error)});
-
-
 
 musicData("queen")
-.then((response)=>{ response.json().then((data)=>{getAlbum(data, "queen")})})
+.then((response)=>{ response.json().then((data)=> {getAlbum(data, "queen")})})
 .catch((error)=>{console.log(error)});
-
-
 
 function getAlbum(datas, name) {
 
